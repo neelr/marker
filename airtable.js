@@ -11,7 +11,6 @@ module.exports = class short {
         let there = false;
         let rec = "";
         base('shorts').select({
-            maxRecords: 3,
             view: "Grid view"
         }).eachPage( (records, fetchNextPage) => {
             records.forEach((record) => {
