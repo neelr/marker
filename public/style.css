@@ -1,21 +1,13 @@
-body,html {
-    margin:0;
+.container {
+    max-width: 38rem;
+    padding: 2rem;
+    margin: auto;
     font-family: system-ui, 'Helvetica', 'Segoe UI', sans-serif;
 }
 body {
     display:flex;
 }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width:50vw;
-    padding-left: 25px;
-}
-@media only screen and (max-width:724px) {
-    .container {
-        width:90vw;
-    }
-}
+
 input, textarea {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -40,11 +32,13 @@ input[type="submit"] {
     width:100px;
     margin-left:auto;
     margin-right:auto;
+    margin-top: 8px;
     padding:5px !important;
 }
 input[type="submit"]:hover {
     cursor: pointer;
     border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 .top {
     margin-left:auto;
