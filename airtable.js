@@ -54,7 +54,6 @@ module.exports = class short {
     retrieve (id,callback) {
         var triggered = false;
         base('shorts').select({
-            maxRecords: 3,
             view: "Grid view"
         }).eachPage((records, fetchNextPage) => {
             records.forEach((record) => {
