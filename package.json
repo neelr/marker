@@ -1,0 +1,20 @@
+{
+  "name": "markup",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "git": "https://github.com/neelr/Markup"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "marked": "^0.7.0"
+  }
+}

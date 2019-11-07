@@ -1,0 +1,61 @@
+body,html {
+    margin:0;
+    font-family: system-ui, 'Helvetica', 'Segoe UI', sans-serif;
+}
+body {
+    display:flex;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width:50vw;
+    padding-left: 25px;
+}
+@media only screen and (max-width:724px) {
+    .container {
+        width:90vw;
+    }
+}
+input, textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+   
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 5px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+input[type="submit"] {
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px !important;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.top {
+    margin-left:auto;
+    margin-right:auto; 
+    font-weight: 700;
+    padding:6px 10px 4px 10px;
+    border-radius: 100px;
+    color: black;
+    text-decoration: none;
+}
+.top:hover {
+    background-color: #d3fbff;
+    cursor: pointer;
+}
