@@ -1,9 +1,9 @@
 {
-  "name": "marked",
+  "name": "marker",
   "version": "1.0.0",
   "description": "",
   "repository": {
-    "git": "https://github.com/neelr/Marked"
+    "git": "https://github.com/neelr/marker"
   },
   "main": "index.js",
   "scripts": {

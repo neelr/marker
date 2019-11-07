@@ -30,4 +30,4 @@ app.get("/:id",(req,res)=> {
     });
 });
 
-app.listen(3000,()=> console.log('Markup is a runnin on port 3000!'));
+app.listen(3000,()=> console.log('Marker is a runnin on port 3000!'));
