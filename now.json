@@ -1,0 +1,10 @@
+{
+    "name": "marker",
+    "version": 2,
+    "builds": [
+        { "src": "/public/*", "use": "@now/static" },
+        { "src": "/views/*", "use": "@now/static" },
+        { "src": "*.js", "use": "@now/node" }
+      ],
+      "routes": [{ "src": "/.*", "methods": ["GET"], "dest": "/app.js" },{"src": "/.*", "methods": ["POST"], "dest": "/app.js" }]
+}
