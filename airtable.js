@@ -1,7 +1,13 @@
 var Airtable = require('airtable');
 var base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(process.env.AIRTABLE_BASE);
 var marked = require("marked");
+var fs = require("fs");
+var TEMPLATE = fs.readFileSync("./public/template.html","utf8");
 module.exports = class short {
+    static createTemplate(id, content) {
+        let buff = TEMPLATE.replace("%title%",id);
+        return buff.replace("%content%",content);
+    }
     constructor(id, pass, url, markdown,res) {
         if (!id) {return null};
         this.id = id;
@@ -45,7 +51,7 @@ module.exports = class short {
                       }
                     }], () => res.redirect("/"+this.id));
             } else {
-                res.send("This record is taken and your password did not match");
+                res.send(short.createTemplate("Taken!","<h4>This record is taken and your password did not match</h4>"));
             }
         });
         
@@ -71,8 +77,5 @@ module.exports = class short {
     }
     render () {
         return marked(this.markdown);
-    }
-    isVerified () {
-        return this.verified;
     }
 }
