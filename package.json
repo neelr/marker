@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "neelr",
   "license": "MIT",
   "dependencies": {
     "airtable": "^0.7.2",

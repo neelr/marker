@@ -1,6 +1,10 @@
 {
     "name": "marker",
     "version": 2,
+    "env": {
+        "AIRTABLE_KEY":"keyObm8jaEtLt3MvI",
+        "AIRTABLE_BASE":"app8ZLTgpF85FAh0W"
+    },
     "builds": [
         { "src": "/public/*", "use": "@now/static" },
         { "src": "/views/*", "use": "@now/static" },
