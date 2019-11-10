@@ -5,8 +5,8 @@ var fs = require("fs");
 var TEMPLATE = fs.readFileSync("./public/template.html","utf8");
 module.exports = class short {
     static createTemplate(id, content) {
-        let buff = TEMPLATE.replace("%title%",id);
-        return buff.replace("%content%",content);
+        let buff = TEMPLATE.replace("--title--",id);
+        return buff.replace("--content--",content);
     }
     constructor(id, pass, url, markdown,res) {
         if (!id) {return null};
