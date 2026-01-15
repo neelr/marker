@@ -89,3 +89,10 @@ typings/
 
 # Only bc it has my env's
 now.json
+
+# Cloudflare Wrangler
+.wrangler/
+
+# Database dumps
+import.sql
+migrations/

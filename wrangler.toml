@@ -1,0 +1,9 @@
+name = "marker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "marker_db"
+database_id = "e7459062-16ca-4b05-88eb-db910655008a"
+migrations_dir = "migrations"
